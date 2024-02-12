@@ -20,9 +20,9 @@ export const tools = [
   {
     label: 'Image Generation',
     icon: ImageIcon,
+    href: '/image',
     color: "text-pink-700",
     bgColor: "bg-pink-700/10",
-    href: '/image',
   },
   {
     label: 'Video Generation',

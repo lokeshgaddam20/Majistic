@@ -19,7 +19,7 @@ import { Empty } from "@/components/ui/empty";
 
 import { formSchema } from "./constants";
 
-const VideoPage = () => {
+const MusicPage = () => {
   // const proModal = useProModal();
   const router = useRouter();
   const [music, setMusic] = useState<string>();
@@ -36,7 +36,6 @@ const VideoPage = () => {
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       setMusic(undefined);
-      // setSpectrogramUrl(undefined);
       const response = await axios.post('/api/music', values);
       console.log(response)
       setMusic(response.data.audio);
@@ -116,4 +115,4 @@ const VideoPage = () => {
    );
 }
  
-export default VideoPage;
+export default MusicPage;

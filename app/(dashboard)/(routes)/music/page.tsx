@@ -16,7 +16,6 @@ import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Loader } from "@/components/loader";
 import { Empty } from "@/components/ui/empty";
 // import { useProModal } from "@/hooks/use-pro-modal";
-import Image from "next/image";
 
 import { formSchema } from "./constants";
 
@@ -24,7 +23,6 @@ const MusicPage = () => {
   // const proModal = useProModal();
   const router = useRouter();
   const [music, setMusic] = useState<string>();
-  // const [spectrogramUrl, setSpectrogramUrl] = useState<string>();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -41,7 +39,6 @@ const MusicPage = () => {
       // setSpectrogramUrl(undefined);
       const response = await axios.post('/api/music', values);
       console.log(response)
-      // setSpectrogramUrl(response.data.spectrogram)
       setMusic(response.data.audio);
       form.reset();
     } catch (error: any) {
@@ -109,16 +106,6 @@ const MusicPage = () => {
         {!music && !isLoading && (
           <Empty label="No music generated." />
         )}
-        <div>
-      {/* {spectrogramUrl && (
-        <Image
-          src={spectrogramUrl}
-          alt="Spectrogram"
-          width={5000} // Adjust width as needed
-          height={500} // Adjust height as needed
-        />
-      )} */}
-    </div>
         {music && (
           <audio controls className="w-full mt-8">
             <source src={music} />

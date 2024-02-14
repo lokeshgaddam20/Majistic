@@ -19,7 +19,7 @@ import { Empty } from "@/components/ui/empty";
 
 import { formSchema } from "./constants";
 
-const MusicPage = () => {
+const VideoPage = () => {
   // const proModal = useProModal();
   const router = useRouter();
   const [music, setMusic] = useState<string>();
@@ -56,7 +56,7 @@ const MusicPage = () => {
     <div>
       <Heading
         title="Music Generation"
-        description="Turn your prompt into music."
+        description="Get useless music just through text."
         icon={Music}
         iconColor="text-emerald-500"
         bgColor="bg-emerald-500/10"
@@ -116,4 +116,4 @@ const MusicPage = () => {
    );
 }
  
-export default MusicPage;
+export default VideoPage;

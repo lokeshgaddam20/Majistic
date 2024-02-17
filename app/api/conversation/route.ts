@@ -35,12 +35,12 @@ export async function POST(
       if (!freeTrial) {
         return new NextResponse("Free trial has expired. Please upgrade to pro.", { status: 403 });
       }
-  
       const response = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
         messages
       });
-  
+      
+      await incrementApiLimit();
     //   if (!isPro) {
     //     await incrementApiLimit();
     //   }

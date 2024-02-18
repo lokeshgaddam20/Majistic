@@ -6,6 +6,7 @@ import { Code } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
 import { ChatCompletionRequestMessage } from "openai";
+import { useProModal } from "@/hooks/use-pro-modal";
 
 import { formSchema } from "./constants";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
@@ -24,6 +25,7 @@ import { BotAvatar } from "@/components/bot-avatar";
 
 const CodePage = () => {
   const router = useRouter();
+  const proModal = useProModal();
   const [messages, setMessages] = useState<ChatCompletionRequestMessage[]>([]);
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -51,7 +53,7 @@ const CodePage = () => {
       form.reset();
     } catch (error: any) {
       if (error?.response?.status === 403) {
-        // proModal.onOpen();
+        proModal.onOpen();
         console.log("if, catch block ; conversation:page.tsx");
       } else {
         toast.error("Something went wrong.");

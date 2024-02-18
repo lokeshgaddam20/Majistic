@@ -1,4 +1,4 @@
-##MAJISTIC
+## MAJISTIC
 ===============
 AI Generations is a Next.js application for AI-powered content generation using OpenAI and Replicate APIs. Users can generate text, code, images, music, and more with the latest AI models.
 
@@ -10,8 +10,8 @@ __Music & Video Generation__: Generate original music and videos with AI models 
 __User Accounts__: Built-in authentication with Clerk and Stripe payments.
 __PostgreSQL Database__: Data stored in a Supabase PostgreSQL database.
 __Responsive Design__: Beautiful responsive design using Tailwind CSS.
-==================
-####Tech Stack
+
+#### Tech Stack
 Frontend: Next.js, React
 AI requests: OpenAI@4, Replicate AI
 Styling: Tailwind CSS
@@ -19,8 +19,7 @@ Auth: Clerk
 Database: Supabase (Postgres)
 Deployment: Vercel
 
-####Getting Started
-===================
+#### Getting Started
 
 1. Clone the repo
 ```

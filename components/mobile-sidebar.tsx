@@ -9,10 +9,10 @@ import Sidebar from "@/components/sidebar";
 
 const MobileSidebar = ({
   apiLimitCount = 0,
-  // isPro = false
+  isPro = false
 }: {
   apiLimitCount: number;
-  // isPro: boolean;
+  isPro: boolean;
 }) => {
   const [isMounted, setIsMounted] = useState(false);
 
@@ -32,7 +32,7 @@ const MobileSidebar = ({
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="p-0 w-full md:w-auto">
-        <Sidebar apiLimitCount={apiLimitCount}/>
+        <Sidebar apiLimitCount={apiLimitCount} isPro={isPro} />
       </SheetContent>
     </Sheet>
   );

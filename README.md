@@ -2,13 +2,19 @@
 AI Generations is a Next.js application for AI-powered content generation using OpenAI and Replicate APIs. Users can generate text, code, images, music, and more with the latest AI models.
 
 Features
-..* __Text Generation__: Generate conversational text and prose using models like GPT-3 and Codex.
-..* __Image Generation__: Create images from text descriptions with DALL-E and Stable Diffusion.
-..* __Code Generation__: Get AI-assisted code completion suggestions using GPT-3 and Codex.
-..* __Music & Video Generation__: Generate original music and videos with AI models from Replicate.
-..* __User Accounts__: Built-in authentication with Clerk and Stripe payments.
-..* __PostgreSQL Database__: Data stored in a Supabase PostgreSQL database.
-..* __Responsive Design__: Beautiful responsive design using Tailwind CSS.
+__Text Generation__: Generate conversational text and prose using models like GPT-3 and Codex.
+
+__Image Generation__: Create images from text descriptions with DALL-E and Stable Diffusion.
+
+__Code Generation__: Get AI-assisted code completion suggestions using GPT-3 and Codex.
+
+__Music & Video Generation__: Generate original music and videos with AI models from Replicate.
+
+__User Accounts__: Built-in authentication with Clerk and Stripe payments.
+
+__PostgreSQL Database__: Data stored in a Supabase PostgreSQL database.
+
+__Responsive Design__: Beautiful responsive design using Tailwind CSS.
 
 #### Tech Stack
 Frontend: Next.js, React

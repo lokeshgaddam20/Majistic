@@ -1,5 +1,4 @@
 ## MAJISTIC
-===============
 AI Generations is a Next.js application for AI-powered content generation using OpenAI and Replicate APIs. Users can generate text, code, images, music, and more with the latest AI models.
 
 Features
@@ -32,7 +31,7 @@ npm install
 ```
 3. Add environment variables
 
-...Copy the .env.example file to .env.local and add your API keys.
+Copy the .env.example file to .env.local and add your API keys.
 4. Run the dev server
 ```
 npm run dev

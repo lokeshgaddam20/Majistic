@@ -1,5 +1,5 @@
 ## MAJISTIC
-AI Generations is a Next.js application for AI-powered content generation using OpenAI and Replicate APIs. Users can generate text, code, images, music, and more with the latest AI models.
+Majistic is a Next.js application for AI-powered content generation using OpenAI and Replicate APIs. Users can generate text, code, images, music, and more with the latest AI models.
 
 Features
 __Text Generation__: Generate conversational text and prose using models like GPT-3 and Codex.

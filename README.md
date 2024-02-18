@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+##MAJISTIC
+===============
+AI Generations is a Next.js application for AI-powered content generation using OpenAI and Replicate APIs. Users can generate text, code, images, music, and more with the latest AI models.
 
-## Getting Started
+Features
+__Text Generation__: Generate conversational text and prose using models like GPT-3 and Codex.
+__Image Generation__: Create images from text descriptions with DALL-E and Stable Diffusion.
+__Code Generation__: Get AI-assisted code completion suggestions using GPT-3 and Codex.
+__Music & Video Generation__: Generate original music and videos with AI models from Replicate.
+__User Accounts__: Built-in authentication with Clerk and Stripe payments.
+__PostgreSQL Database__: Data stored in a Supabase PostgreSQL database.
+__Responsive Design__: Beautiful responsive design using Tailwind CSS.
+==================
+####Tech Stack
+Frontend: Next.js, React
+AI requests: OpenAI@4, Replicate AI
+Styling: Tailwind CSS
+Auth: Clerk
+Database: Supabase (Postgres)
+Deployment: Vercel
 
-First, run the development server:
+####Getting Started
+===================
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. Clone the repo
 ```
+git clone https://github.com/lokeshgaddam20/majistic.git
+cd majistic
+```
+2. Install dependencies
+```
+npm install
+```
+3. Add environment variables
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+...Copy the .env.example file to .env.local and add your API keys.
+4. Run the dev server
+```
+npm run dev
+npx prisma studio
+```
+Open http://localhost:3000 to view the app.

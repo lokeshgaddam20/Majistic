@@ -39,7 +39,7 @@ const VideoPage = () => {
 
       const response = await axios.post('/api/video', values);
 
-      setVideo(response.data[0]);
+      setVideo(response.data);
       form.reset();
     } catch (error: any) {
       if (error?.response?.status === 403) {

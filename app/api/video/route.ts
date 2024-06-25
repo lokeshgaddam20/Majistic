@@ -33,10 +33,15 @@ export async function POST(
     }
 
     const response = await replicate.run(
-      "anotherjesse/zeroscope-v2-xl:71996d331e8ede8ef7bd76eba9fae076d31792e4ddf4ad057779b443d6aea62f",
+      "lucataco/animate-diff:beecf59c4aee8d81bf04f0381033dfa10dc16e845b4ae00d281e2fa377e48a9f",
       {
         input: {
-          prompt,
+          path: "toonyou_beta3.safetensors",
+          seed: 255224557,
+          steps: 25,
+          prompt: prompt,
+          motion_module: "mm_sd_v14",
+          guidance_scale: 7.5
         }
       }
     );

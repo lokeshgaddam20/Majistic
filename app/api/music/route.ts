@@ -33,10 +33,21 @@ export async function POST(
     }
 
     const response = await replicate.run(
-      "riffusion/riffusion:8cf61ea6c56afd61d8f5b9ffd14d7c216c0a93844ce2d82ac1c9ecc9c7f24e05",
+      "meta/musicgen:671ac645ce5e552cc63a54a2bbff63fcf798043055d2dac5fc9e36a837eedcfb",
       {
         input: {
-          prompt_a: prompt
+          top_k: 250,
+          top_p: 0,
+          prompt: prompt,
+          duration: 8,
+          temperature: 1,
+          continuation: false,
+          model_version: "stereo-large",
+          output_format: "mp3",
+          continuation_start: 0,
+          multi_band_diffusion: false,
+          normalization_strategy: "peak",
+          classifier_free_guidance: 3
         }
       }
     );
